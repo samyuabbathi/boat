@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="boat.css">
+    <script src="boat.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="my-container" id="myContainer">
+        <p class="top-line mb-0">Grand Festive Sale is live- Get upto 60% OFF!<br> Shop Now!</p>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-0 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" class="boat-logo" alt="Boat" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">boAt Personalization</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Corporate Orders</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" name="search bar" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989" class="mr-3" style="width:22px;height:22px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve" height="22" width="22" class="blank_cart">
+                  <style type="text/css">
+                    .st0{fill-rule:evenodd;clip-rule:evenodd; fill:#000;}
+          
+                    @media(min-width: 768px){
+                      .st0{fill:#000 !important;}
+                    }
+                  </style>
+                  <path class="st0 header_cart_icon_svg" d="M14,6.1v1.2C14,7.6,14.4,8,14.7,8c0.4,0,0.7-0.3,0.7-0.7V6.1h1.4c0.6,0,1.1,0.4,1.2,1l1.4,12.2  c0.1,0.6-0.4,1.2-1,1.3c0,0-0.1,0-0.1,0H3.7c-0.6,0-1.2-0.5-1.2-1.2c0,0,0-0.1,0-0.1L4,7.1c0.1-0.6,0.6-1,1.2-1h1.4v1.2  C6.6,7.6,6.9,8,7.3,8S8,7.6,8,7.3V6.1H14z M15.4,4.7V4.4C15.4,2,13.5,0,11,0S6.6,2,6.6,4.4v0.2H5.2c-1.3,0-2.4,1-2.6,2.3L1.2,19.1  C1,20.5,2,21.8,3.4,22c0.1,0,0.2,0,0.3,0h14.5c1.4,0,2.6-1.2,2.6-2.6c0-0.1,0-0.2,0-0.3L19.4,7c-0.2-1.3-1.3-2.3-2.6-2.3H15.4z   M11,1.4c-1.7,0-3,1.4-3,3l0,0v0.2H14V4.4C14,2.8,12.7,1.4,11,1.4L11,1.4z"></path>
+                  </svg>
+                </div>
+            </div>
+        </nav>
+
+        <div class ="top-container mb-0">
+          <div class=" ml-5">
+            <h2 class="heading">True Wireless <br>  <span class="earbuds">Earbuds<br></span></h2>
+            <h2 class="para">Starting from <i class="fa-solid fa-indian-rupee-sign"><strong>999</strong><sup> *</sup></i></h2>
+            <a href="earbuds.html"><button class="shop-products">Shop Products</button></a>
+            <!-- <button class="shop-products" onclick ="shopProduct1()"> <a href="earbuds.html">Shop Products</a>  -->
+
+              <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
+                <path id="Path_341797" data-name="Path 341797" d="M11.16,8.693a9.578,9.578,0,0,0,3.86-.787,10.246,10.246,0,0,0,3.191-2.167,10.19,10.19,0,0,0,2.162-3.186,9.621,9.621,0,0,0,.782-3.865,9.578,9.578,0,0,0-.787-3.86,10.309,10.309,0,0,0-2.167-3.2,10.059,10.059,0,0,0-3.191-2.162,9.687,9.687,0,0,0-3.86-.777,9.65,9.65,0,0,0-3.855.777A10.136,10.136,0,0,0,4.1-8.368a10.192,10.192,0,0,0-2.167,3.2,9.632,9.632,0,0,0-.782,3.86,9.567,9.567,0,0,0,.787,3.865A10.263,10.263,0,0,0,4.109,5.739,10.263,10.263,0,0,0,7.3,7.906,9.567,9.567,0,0,0,11.16,8.693Zm0-1.832A8.012,8.012,0,0,1,7.98,6.228a8.2,8.2,0,0,1-2.6-1.755,8.132,8.132,0,0,1-1.75-2.6A8.069,8.069,0,0,1,3-1.312a8.069,8.069,0,0,1,.628-3.181,8.132,8.132,0,0,1,1.75-2.6,8.147,8.147,0,0,1,2.6-1.75,8.032,8.032,0,0,1,3.175-.628,8.107,8.107,0,0,1,3.186.628A8.116,8.116,0,0,1,16.945-7.1a8.132,8.132,0,0,1,1.75,2.6,8.069,8.069,0,0,1,.628,3.181A8.069,8.069,0,0,1,18.7,1.869a8.132,8.132,0,0,1-1.75,2.6,8.2,8.2,0,0,1-2.6,1.755A8.012,8.012,0,0,1,11.16,6.861Zm5-8.194a.91.91,0,0,0-.3-.628L12.571-5.244a.773.773,0,0,0-.556-.206.71.71,0,0,0-.53.216.724.724,0,0,0-.211.525.751.751,0,0,0,.237.566l1.2,1.173,1.132.926-2.028-.093H6.909a.755.755,0,0,0-.571.232.8.8,0,0,0-.221.571.791.791,0,0,0,.221.576.764.764,0,0,0,.571.226h4.91l2.028-.082L12.715.325l-1.2,1.163a.719.719,0,0,0-.237.556.754.754,0,0,0,.211.54.7.7,0,0,0,.53.221.756.756,0,0,0,.556-.226L15.864-.694A.9.9,0,0,0,16.163-1.332Z" transform="translate(-1.155 11.307)" fill="#fff"></path>
+              </svg></span> -->
+            </button>
+            
+          </div>
+          
+          <img src="https://www.boat-lifestyle.com/cdn/shop/files/img_1_desktop_4c81b094-8292-4d54-8b20-5eb3b823a4e6_2000x.png?v=1686650857" class="image"/>
+
+          <h2 class="sub-heading">Best <strong>Sellers</strong></h2>
+          <div class="products-card-container d-flex ml-5">
+            <div class="product-card mr-3">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Engraving Available
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_f04f74fd-45d4-4614-85cf-6ccf69c4cf90.jpg?v=1691395049"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">60 Hours Playback</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.8</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes 131</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 799 <br></i>
+               
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹2,990 </p>
+                   <p class="m-0  off">73% off</p>
+                
+              </div>
+            </div>
+
+
+            <div class="product-card mr-3">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Recently Restocked
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Airdopes-181.jpg?v=1682576552"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">20 Hours Playback</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.9</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes 181</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,199 <br></i>
+               <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                    <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                    <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                    <!-- <span class="more-colors">+5</span> -->
+              <!-- </button> -->
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹2,990 </p>
+                   <p class="m-0  off">60% off</p>
+                
+              </div>
+            </div>
+
+
+            <div class="product-card mr-3">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Engraving Available
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">40 Hours Playback</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.9</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes 161</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 899 <br></i>
+               <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                    <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                    <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                    <!-- <span class="more-colors">+5</span> -->
+              <!-- </button> -->
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹2,490 </p>
+                   <p class="m-0  off">64% off</p>
+                
+              </div>
+            </div>
+
+
+            <div class="product-card mr-3">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Engraving Available
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes-115_1.jpg?v=1686139410"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">Clear Calling</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.8</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes 115</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1489 <br></i>
+               <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                    <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                    <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                    <!-- <span class="more-colors">+5</span> -->
+              <!-- </button> -->
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹2,990 </p>
+                   <p class="m-0  off">50% off</p>
+                
+              </div>
+            </div>
+
+
+
+            <div class="product-card mr-2">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Recently Restocked
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_Alpha.jpg?v=1688452927"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">35 Hours Playback</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.9</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes Alpha</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 799 <br></i>
+               <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                    <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                    <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                    <!-- <span class="more-colors">+5</span> -->
+              <!-- </button> -->
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹3,490 </p>
+                   <p class="m-0  off">77% off</p>
+                
+              </div>
+            </div>
+
+
+
+            <div class="product-card mr-3">
+              <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                ✍️ Engraving Available
+              </span>
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/280_lr.png?v=1721292483"
+               class="product-image"/>
+               <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+               <div class ="hours-rating d-flex flex-row">
+                  <p class="hours">Noise Cancellation</p>
+                  <div class=" star-rating d-flex" width="14px">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                    <span class="rating" >4.8</span>
+                  </div>
+               </div>
+               <h3 class="product-name">boAt Airdopes 280 ANC</h3>
+               <hr class="line ml-1">
+               <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,299 <br></i>
+               <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                    <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                    <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                    <!-- <span class="more-colors">+5</span> -->
+              <!-- </button> -->
+              <div class="grid--price d-flex  ml-1">
+                
+                  <p class="rate">₹6,299 </p>
+                   <p class="m-0  off">81% off</p>
+                
+              </div>
+            </div>
+
+          </div>
+      </div>
+          
+
+          <div class ="middle-container mb-0">
+            <div class=" ml-5">
+              <h2 class="heading">Smart   <span class="earbuds">Watches<br></span></h2>
+              <h2 class="para">Starting from <i class="fa-solid fa-indian-rupee-sign"><strong>1699</strong><sup> *</sup></i></h2>
+              <a href="watches.html"><button class="shop-products">Shop Products</button></a>
+              <!-- <button class="shop-products"> <a href="watches.html">Shop Products</a>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
+                  <path id="Path_341797" data-name="Path 341797" d="M11.16,8.693a9.578,9.578,0,0,0,3.86-.787,10.246,10.246,0,0,0,3.191-2.167,10.19,10.19,0,0,0,2.162-3.186,9.621,9.621,0,0,0,.782-3.865,9.578,9.578,0,0,0-.787-3.86,10.309,10.309,0,0,0-2.167-3.2,10.059,10.059,0,0,0-3.191-2.162,9.687,9.687,0,0,0-3.86-.777,9.65,9.65,0,0,0-3.855.777A10.136,10.136,0,0,0,4.1-8.368a10.192,10.192,0,0,0-2.167,3.2,9.632,9.632,0,0,0-.782,3.86,9.567,9.567,0,0,0,.787,3.865A10.263,10.263,0,0,0,4.109,5.739,10.263,10.263,0,0,0,7.3,7.906,9.567,9.567,0,0,0,11.16,8.693Zm0-1.832A8.012,8.012,0,0,1,7.98,6.228a8.2,8.2,0,0,1-2.6-1.755,8.132,8.132,0,0,1-1.75-2.6A8.069,8.069,0,0,1,3-1.312a8.069,8.069,0,0,1,.628-3.181,8.132,8.132,0,0,1,1.75-2.6,8.147,8.147,0,0,1,2.6-1.75,8.032,8.032,0,0,1,3.175-.628,8.107,8.107,0,0,1,3.186.628A8.116,8.116,0,0,1,16.945-7.1a8.132,8.132,0,0,1,1.75,2.6,8.069,8.069,0,0,1,.628,3.181A8.069,8.069,0,0,1,18.7,1.869a8.132,8.132,0,0,1-1.75,2.6,8.2,8.2,0,0,1-2.6,1.755A8.012,8.012,0,0,1,11.16,6.861Zm5-8.194a.91.91,0,0,0-.3-.628L12.571-5.244a.773.773,0,0,0-.556-.206.71.71,0,0,0-.53.216.724.724,0,0,0-.211.525.751.751,0,0,0,.237.566l1.2,1.173,1.132.926-2.028-.093H6.909a.755.755,0,0,0-.571.232.8.8,0,0,0-.221.571.791.791,0,0,0,.221.576.764.764,0,0,0,.571.226h4.91l2.028-.082L12.715.325l-1.2,1.163a.719.719,0,0,0-.237.556.754.754,0,0,0,.211.54.7.7,0,0,0,.53.221.756.756,0,0,0,.556-.226L15.864-.694A.9.9,0,0,0,16.163-1.332Z" transform="translate(-1.155 11.307)" fill="#fff"></path>
+                </svg></span>
+              </button> -->
+              
+            </div>
+            <div class="d-flex flex-row justify-content-end ">
+              <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/blueprimia_1875x.png?v=1679350504" class="image2 mb-5"/>
+            </div>
+  
+            <h2 class="sub-heading ">Best <strong>Sellers</strong></h2>
+            <div class="products-card-container d-flex ml-5">
+              <div class="product-card mr-3">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Engraving Available
+                </span>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Beat_Call.webp?v=1709108774"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">Bluetooth Calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.8</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">boAt Wave Beat Call</h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1049 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹6,499 </p>
+                     <p class="m-0  off">84% off</p>
+                  
+                </div>
+              </div>
+  
+  
+              <div class="product-card mr-3">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Recently Restocked
+                </span>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/4180.png?v=1703824700"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">Bt calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.8</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">boAt Wave Electra</h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,299 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹2,990 </p>
+                     <p class="m-0  off">60% off</p>
+                  
+                </div>
+              </div>
+  
+  
+              <div class="product-card mr-3">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Engraving Available
+                </span>
+                <img src="https://www.boat-lifestyle.com/cdn/shop/files/WaveSigma3_FIs_ActiveBlack01_300x.png?v=1715601060"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">BT Calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.9</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">boAt Wave Sigma 3</h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1099 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹2,490 </p>
+                     <p class="m-0  off">64% off</p>
+                  
+                </div>
+              </div>
+  
+  
+              <div class="product-card mr-3">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Engraving Available
+                </span>
+                <img src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard4_070497d5-41be-4fff-9d9e-3637ef11deea_300x.png?v=1705908523"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">BT Calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.8</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">boAt Wave Magma </h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 5,999 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹6,999 </p>
+                     <p class="m-0  off">14% off</p>
+                  
+                </div>
+              </div>
+  
+  
+  
+              <div class="product-card mr-2">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Recently Restocked
+                </span>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Storm_Call_3.jpg?v=1712640243"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">BT Calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.9</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">boAt Storm Call 3</h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,049 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹8,490 </p>
+                     <p class="m-0  off">83% off</p>
+                  
+                </div>
+              </div>
+  
+  
+  
+              <div class="product-card mr-3">
+                <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                  ✍️ Engraving Available
+                </span>
+                <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Wave_Fury.webp?v=1702287204"
+                 class="product-image"/>
+                 <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                 <div class ="hours-rating d-flex flex-row">
+                    <p class="hours">BT Calling</p>
+                    <div class=" star-rating d-flex" width="14px">
+                      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                      <span class="rating" >4.8</span>
+                    </div>
+                 </div>
+                 <h3 class="product-name">BoAt Wave Fury</h3>
+                 <hr class="line ml-1">
+                 <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,299 <br></i>
+                 <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                      <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                      <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                      <!-- <span class="more-colors">+5</span> -->
+                <!-- </button> -->
+                <div class="grid--price d-flex  ml-1">
+                  
+                    <p class="rate">₹6,299 </p>
+                     <p class="m-0  off">81% off</p>
+                  
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+            <div class ="bottom-container mb-0">
+              <div class="image-container">
+              <div class=" ml-5 ">
+                <h2 class="heading"><strong>Neckbands</strong>   </h2>
+                <h2 class="para">Starting from <i class="fa-solid fa-indian-rupee-sign"><strong>999</strong><sup> *</sup></i></h2>
+                <button class="shop-products">Shop Products
+                  <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
+                    <path id="Path_341797" data-name="Path 341797" d="M11.16,8.693a9.578,9.578,0,0,0,3.86-.787,10.246,10.246,0,0,0,3.191-2.167,10.19,10.19,0,0,0,2.162-3.186,9.621,9.621,0,0,0,.782-3.865,9.578,9.578,0,0,0-.787-3.86,10.309,10.309,0,0,0-2.167-3.2,10.059,10.059,0,0,0-3.191-2.162,9.687,9.687,0,0,0-3.86-.777,9.65,9.65,0,0,0-3.855.777A10.136,10.136,0,0,0,4.1-8.368a10.192,10.192,0,0,0-2.167,3.2,9.632,9.632,0,0,0-.782,3.86,9.567,9.567,0,0,0,.787,3.865A10.263,10.263,0,0,0,4.109,5.739,10.263,10.263,0,0,0,7.3,7.906,9.567,9.567,0,0,0,11.16,8.693Zm0-1.832A8.012,8.012,0,0,1,7.98,6.228a8.2,8.2,0,0,1-2.6-1.755,8.132,8.132,0,0,1-1.75-2.6A8.069,8.069,0,0,1,3-1.312a8.069,8.069,0,0,1,.628-3.181,8.132,8.132,0,0,1,1.75-2.6,8.147,8.147,0,0,1,2.6-1.75,8.032,8.032,0,0,1,3.175-.628,8.107,8.107,0,0,1,3.186.628A8.116,8.116,0,0,1,16.945-7.1a8.132,8.132,0,0,1,1.75,2.6,8.069,8.069,0,0,1,.628,3.181A8.069,8.069,0,0,1,18.7,1.869a8.132,8.132,0,0,1-1.75,2.6,8.2,8.2,0,0,1-2.6,1.755A8.012,8.012,0,0,1,11.16,6.861Zm5-8.194a.91.91,0,0,0-.3-.628L12.571-5.244a.773.773,0,0,0-.556-.206.71.71,0,0,0-.53.216.724.724,0,0,0-.211.525.751.751,0,0,0,.237.566l1.2,1.173,1.132.926-2.028-.093H6.909a.755.755,0,0,0-.571.232.8.8,0,0,0-.221.571.791.791,0,0,0,.221.576.764.764,0,0,0,.571.226h4.91l2.028-.082L12.715.325l-1.2,1.163a.719.719,0,0,0-.237.556.754.754,0,0,0,.211.54.7.7,0,0,0,.53.221.756.756,0,0,0,.556-.226L15.864-.694A.9.9,0,0,0,16.163-1.332Z" transform="translate(-1.155 11.307)" fill="#fff"></path>
+                  </svg></span>
+                </button>
+                
+              </div>
+              <div class="d-flex flex-row justify-content-end "> 
+                 <img src="https://m.media-amazon.com/images/I/41LjyhN1feL._AC_UF1000,1000_QL80_.jpg" class="image3 mb-5"/>
+              </div>
+            </div>
+              <h2 class="sub-heading">Best <strong>Sellers</strong></h2>
+              <div class="products-card-container d-flex ml-5">
+                <div class="product-card mr-3">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ Restocking Soon
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_235_V2_ac99fe3f-ea0d-4a97-ae36-ee20e835dbe8.png?v=1688047719"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">8 Hours Playback</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.9</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz 235 V2</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 899 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹2,990 </p>
+                       <p class="m-0  off">70% off</p>
+                    
+                  </div>
+                </div>
+    
+    
+                <div class="product-card mr-3">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ Best Sellers
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/r255pro_55d805bc-f2e1-4861-9533-8eee57081305.jpg?v=1682573437"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">60 Hours Playback</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.8</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz 255 Pro+</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 999 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹3,990 </p>
+                       <p class="m-0  off">75% off</p>
+                    
+                  </div>
+                </div>
+    
+    
+                <div class="product-card mr-3">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ New Launch
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_110.jpg?v=1698387127"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">40 Hours Playback</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.8</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz 110</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 899 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹2,490 </p>
+                       <p class="m-0  off">64% off</p>
+                    
+                  </div>
+                </div>
+    
+    
+                <div class="product-card mr-3">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ Recently Restocked
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-Rockerz-235-Pro.jpg?v=1682579854"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">20 Hours PlayBack</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.8</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz 235 Pro+</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 799 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹2,990 </p>
+                       <p class="m-0  off">60% off</p>
+                    
+                  </div>
+                </div>
+    
+    
+    
+                <div class="product-card mr-2">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ Recently Restocked
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz_109.jpg?v=1697621745"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">40 Hours Playback</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.7</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz 109</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1299 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹3,490 </p>
+                       <p class="m-0  off">48% off</p>
+                    
+                  </div>
+                </div>
+    
+    
+    
+                <div class="product-card mr-3">
+                  <span class="priority label z-10 label--highlight custom-label free-label bg-green" style="display: flex; align-items: center;">
+                    ✍️ Recently Restocked
+                  </span>
+                  <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_trinity.jpg?v=1692340413"
+                   class="product-image"/>
+                   <!-- <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/personalisation_ca8237cd-20ca-4da7-8ad2-7d8a50320b3c.png?v=1724308287" alt="Personalization" loading="lazy" width="29" height="29"> -->
+                   <div class ="hours-rating d-flex flex-row">
+                      <p class="hours">150 Hours Playback</p>
+                      <div class=" star-rating d-flex" width="14px">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/star-5.png?v=1722331088" alt="star" class="star ml-0"/>
+                        <span class="rating" >4.8</span>
+                      </div>
+                   </div>
+                   <h3 class="product-name">boAt Rockerz Trinity</h3>
+                   <hr class="line ml-1">
+                   <i class="fa-solid fa-indian-rupee-sign ml-2 mb-1"> 1,099 <br></i>
+                   <!-- <button is="toggle-button" aria-expanded="false" class="variants-list hidden-phone"> -->
+                        <!-- <span class="swatch-circle" style="background:#22201f"></span> -->
+                        <!-- <span class="swatch-circle" style="background:#586575"></span> -->
+                        <!-- <span class="more-colors">+5</span> -->
+                  <!-- </button> -->
+                  <div class="grid--price d-flex  ml-1">
+                    
+                      <p class="rate">₹6,299 </p>
+                       <p class="m-0  off">56% off</p>
+                    
+                  </div>
+                </div>
+    
+              </div>
+
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/Strip_Desktop1_a9e9fd3e-ab2e-4827-b205-bda3ae0769f6_2000x.jpg?v=1728037973"
+               class="offer-image mt-2"/>
+
+              <footer class="footer-container d-flex mt-5">
+                <div class="subscribe">
+                  <img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" class="boat-logo-second" alt="Boat" width="50" height="44">
+                  <h3 class="subscribe-heading"> <strong>Subscribe to our email alerts!</strong></h3>
+                  <input type="text" class="input-class" placeholder="Enter your email address">
+                </div>
+
+                <div class="footer-items-container ml-5 mt-5 d-flex">
+                  <ul class="items-container">
+
+                    <li class="mb-2"><strong >Shop</strong></li>
+                    <li >True Wireless Earbuds </li>
+                    <li>Wired Headphones</li>
+                    <li>Home Audio</li>
+                    <li>Smart Watches</li>
+                    <li>Misfit Trimmers</li>
+                  </ul>
+
+                  <ul class="items-container ml-4">
+                    <li class="mb-2"> </li>
+                    <li id="item"> Wireless Headphones</li>
+                    <li>Wireless Speaker</li>
+                    <li>Mobile Accessories</li>
+                    <li>TRebel</li>
+                    <li>Refer  & Earn</li>
+                  </ul>
+
+                  <ul class="items-container ml-5 mr-5">
+
+                    <li class="mb-0"><strong >Help</strong></li>
+                    <li >Track Your Order </li>
+                    <li>Warranty & Support</li>
+                    <li>Return Policy</li>
+                    <li>Service Centres</li>
+                    <li>Bulk Orders</li>
+                    <li>Why Buy Direct</li>
+                  </ul>
+
+                  <ul class="ml-5" id="itemsContainer">
+
+                    <li class="mb-0 height"><strong >Company</strong></li>
+                    <li class="mb-0 height">About boAt </li>
+                    <li class="mb-0 height">News </li>
+                    <li class="mb-0 height">Read Our Blog</li>
+                    <li class="mb-0 height">Careers</li>
+                    <li class="mb-0 height">Security</li>
+                    <li class="mb-0 height">Investors Relations</li>
+                    <li class="mb-0 height">Social Responsibility</li>
+                    <li class="mb-0 height">Warranty Policy</li>
+                  </ul>
+
+                
+                </div>
+              </footer>
+
+              <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="top-footer  d-flex flex-row justify-content-center">
+                              <h4 class="sent mr-4">Let's get social</h4>
+                              <i class="fa-brands fa-facebook-f footer-icons mr-0"></i>
+                              <i class="fa-brands fa-x-twitter footer-icons"></i>
+                              <i class="fa-brands fa-instagram footer-icons"></i>
+                              <i class="fa-brands fa-youtube footer-icons"></i>
+                              <i class="fa-brands fa-linkedin-in footer-icons  "><br></i>
+                            </div>
+                            <p class="last-line">Privacy Policy. Terms & Conditions <br></p>
+                            <p class="copyright">©2024 Imagine Marketing Limited. All Rights Reserved</p>
+                            <p class="contact-us">
+                              For queries contact us: Manager, Imagine Marketing Limited Unit no. 204 &amp; 205, 2nd floor, D-wing &amp; E-wing,<br>
+                              Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="whatsapp hidden-mobile hidden-pocket" style="position:fixed;bottom:60px;right:10px;cursor:pointer;">
+      <a href="https://api.whatsapp.com/send?phone=919667700177&amp;text=Hi">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/whtsapp.png?v=1709276301" style="width:45px;border-radius:50%;" loading="lazy" width="45" height="45">
+      </a>
+    </div>
+    <div class="chatbot hidden-moble-chat" style="position:fixed;bottom:10px;right:10px;cursor:pointer;">
+      <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Chat-Icon.jpg?v=1690367119" style="width:45px;border-radius:50%;" loading="lazy" width="45" height="45">
+    </div>
+              
+   <script src="boat.js">
+
+   </script>           
+            
+
+
+            
+                      
+                 
+    
+    
+    
+           
+        
+        
+        
+    
+    
+</body>
+</html>
